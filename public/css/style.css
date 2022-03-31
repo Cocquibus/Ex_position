@@ -1,0 +1,80 @@
+body {
+  margin: 0
+}
+section{
+  background-color: #4da6ff;
+}
+h2{
+  background-color: yellow;
+  border: 2px solid black;
+  font-size: 300px; 
+}
+/* Exo margin */
+section:nth-child(1)>h2{
+  margin: 50px;
+}
+section:nth-child(1)>span>h2{
+  margin-left: 20%;
+}
+section:nth-child(1)>span>span>h2{
+  margin: auto;
+}
+/* fin exo margin */
+/* exo padding */
+section:nth-child(2)>h2{
+  padding: 50px;
+}
+section:nth-child(2)>span>h2{
+  padding: 20%;
+}
+/* fin exo padding */
+/* exo display */
+section:nth-child(3)>h2{
+  display: inline;
+  margin: 10px;
+  padding: 10px;
+}
+section:nth-child(3)>span>h2{
+  display: none;
+  margin: 10px;
+  padding: 10px;
+}
+/* fin exo display */
+/* exo position */
+section:nth-child(4){
+  overflow: auto;
+}
+section:nth-child(4)>h2{
+  float: left;
+  height: 50px;
+  width: auto;
+}
+section:nth-child(5){
+  position: relative;
+}
+section:nth-child(5)>h2{
+  position: fixed;
+  background-color: green;
+  margin: 0px;
+  top:50px;
+  left: 50%;
+}
+/* fin exo position */
+/* exo position (priorité) */
+section:nth-child(6){
+  position: relative;
+}
+section:nth-child(6)>h2{
+  z-index: -2;
+  margin-left: 48%;
+}
+section:nth-child(6)>span>h2{
+  background-color: blue;
+  margin-left: 50%;
+  z-index: -3;
+}
+section:nth-child(6)>span>h2, section:nth-child(6)>h2{
+  position: absolute;
+  top: 85px;
+}
+/* fin exo position (priorité) */
